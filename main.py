@@ -16,7 +16,7 @@ df = pd.DataFrame(data)
 source = st.text_input("📖 데이터 출처를 입력하세요:", "KBO 공식 홈페이지")  # 기본값 설정 가능
 
 # 선 그래프 생성
-fig = px.line(ㄴ
+fig = px.line(
     df,
     x="연도",
     y="관객수(만명)",
