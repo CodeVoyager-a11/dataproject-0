@@ -12,8 +12,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-source = st.text_input("📖 데이터 출처를 입력하세요:", "KBO 공식 홈페이지")
-
 # 최대/최소 관객수와 연도 찾기
 max_idx = df['관객수(만명)'].idxmax()
 min_idx = df['관객수(만명)'].idxmin()
@@ -58,5 +56,3 @@ fig.update_layout(
 )
 
 st.plotly_chart(fig, use_container_width=True)
-
-st.markdown(f"<p style='font-size:0.8em; color:gray;'>출처: {source}</p>", unsafe_allow_html=True)
