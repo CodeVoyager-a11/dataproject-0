@@ -56,3 +56,9 @@ fig.update_layout(
 )
 
 st.plotly_chart(fig, use_container_width=True)
+
+# 출처를 그래프 바로 아래에 작게 표시
+st.markdown(
+    "<p style='font-size:0.75em; color:gray; text-align:right;'>출처: KBO 공식 홈페이지</p>",
+    unsafe_allow_html=True
+)
