@@ -48,6 +48,7 @@ fig.add_trace(go.Scatter(
 
 fig.update_layout(
     title="KBO 리그 연간 관객 수 (2014-2023)",
+    x=0.5,
     xaxis_title="연도",
     yaxis_title="관객 수 (만 명)",
     xaxis=dict(tickmode='linear', dtick=1),
