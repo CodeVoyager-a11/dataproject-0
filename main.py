@@ -25,7 +25,7 @@ fig = px.line(
     labels={"관객수(만명)": "관객 수 (만 명)", "연도": "연도"}
 )
 
-fig.update_layout(yaxis=dict(range=[0, max(df["관객수(만명)"]) * 1.2]))
+fig.update_layout(yaxis=dict(range=[0, max(df["관객수(만명)"]) * 1 ))
 
 # 그래프 출력
 st.plotly_chart(fig, use_container_width=True)
